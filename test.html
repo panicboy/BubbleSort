@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BubbleSort Tests</title>
+    <link rel="stylesheet" type="text/css" href="/css/lib/mocha.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+
+    <script type="text/javascript" src="/js/lib/mocha.js"></script>
+    <script type="text/javascript" src="/js/lib/chai.js"></script>
+    <script>mocha.setup('bdd');</script>
+    <script type="text/javascript" src="/js/bubblesort.js"></script>
+
+    <script type="text/javascript" src="/js/test/bubblesort.spec.js"></script>
+
+    <script>
+      var expect = chai.expect;
+      chai.should();
+      mocha.run();
+    </script>
+  </body>
+</html>
