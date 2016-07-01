@@ -8,7 +8,7 @@ Bubble Sort works by comparing two numbers at a time: the current number in a li
 4. If there have been any swaps since the beginning of the list, go back to step 1.
 
 #### Best case
-The best case scenario for this algorithm is a list that is already in the sorted order. The algorithm will only have to traverse the list once.
+The best case scenario for this algorithm is a list that is already in the sorted order. The algorithm will only have to traverse the list once. Performance won't be great, but it won't be awful, and will degrade in a linear fashion.
 
 #### Worst case
-The worst case scenario for this algorithm is a list in reverse sorted order. The algorithm will have to traverse the entire list once for each list item.
+The worst case scenario for this algorithm is a list in reverse sorted order. The algorithm will have to traverse the entire list once for each list item. Performance will be lousy, and degrade quickly with a larger list.

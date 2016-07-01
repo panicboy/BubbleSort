@@ -1,3 +1,35 @@
-div{
-  margin-left: 20px;
+#controlDiv{
+  width: 500px;
+  height: 30px;
+}
+
+.controls{
+  display: inline-block;
+  height: 25px;
+}
+
+#displayDiv{
+  width: 500px;
+  height: 410px;
+}
+
+.sortBars{
+  display: inline-block;
+  width: 20px;
+  background-color: #A4A4A4;
+}
+
+.selected{
+  border-color: #000000;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.sorting{
+  background-color: #585858;
+}
+
+.statusDisplay{
+  height: 20px;
+  width: 150px;
 }

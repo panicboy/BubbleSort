@@ -19,31 +19,36 @@ var expectedResult;
 
 
 describe('bubbleSort', function(){
+
   it('should be a function', function() {
-    bubbleSort.should.be.a.function;
+    sortyMcBubbleSort.should.be.a.function;
+  });
+
+  it('should be a function', function() {
+    sortyMcBubbleSort.should.be.a.function;
   });
 
   describe('input', function(){
     it('should accept an array of numbers as an input', function() {
-      expect(bubbleSort(testArray1)).to.not.be.null;
+      expect(sortyMcBubbleSort(testArray1)).to.not.be.null;
     });
     it('should return null if not passed an array', function() {
-      expect(bubbleSort(testArray2)).to.be.null;
+      expect(sortyMcBubbleSort(testArray2)).to.be.null;
     });
     it('should return null if not passed an array of numbers', function() {
-      expect(bubbleSort(testArray3)).to.be.null;
+      expect(sortyMcBubbleSort(testArray3)).to.be.null;
     });
   });
 
   describe('results', function(){
     it('should return the same array if passed an array with a single item', function() {
-      expect(bubbleSort(testArray4)).to.equal(testArray4);
+      expect(sortyMcBubbleSort(testArray4)).to.equal(testArray4);
     });
     it('should return a sorted array of numbers', function() {
-      (bubbleSort(testArray1).join()).should.be.equal(expectedResult.join());
+      (sortyMcBubbleSort(testArray1).join()).should.be.equal(expectedResult.join());
     });
     it('should return null if passed an empty array', function() {
-      expect(bubbleSort(testArray0)).to.be.null;
+      expect(sortyMcBubbleSort(testArray0)).to.be.null;
     });
   });
 
