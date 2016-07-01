@@ -1,16 +1,14 @@
-There are many algorithms that deal with sorting collections of data. One of the most basic forms of sorting is known as __Bubble Sort__ and is named by it's nature of the order of data having a "bubbling" effect as a collection of data is sorted. We will start off by implementing a Bubble Sort algorithm on a one-dimensional Array.
+## Bubble Sort
+Bubble Sort works by comparing two numbers at a time: the current number in a list and the one that follows it. If the second number is smaller than the first, it swaps their positions before going to the next number. In this way, lower numbers are always moving to the left and higher numbers to the right. The sorting starts again at the beginning of the list, and continues until the entire list is checked with no swaps.
 
-###Bubble Sort Implementation
-The trick to remembering bubble sort is to visualize that your array is vertical rather than horizontal. If smaller values are "deeper" in the array, they will "rise" to the top until they are the smallest value. If larger values are "higher" in the array, they will sink to the bottom until they are the largest value.
+### Pseudo code
+1. Start with the first number in the list.
+2. If the next number in the list is lower than the current number, swap their positions.
+3. Go to the next number and repeat step 2 until the end of the list.
+4. If there have been any swaps since the beginning of the list, go back to step 1.
 
-###Your challenge
-1. Create a project and a repo for your Bubble Sort implementation. You probably want a README as well.
-2. Add Mocha/Chai to your project for writing your tests against your function.
-3. Write your tests __FIRST__ that will indicate that your sorting function works with multiple inputs.
-4. Implement a function that will take an input Array and apply the bubble sort algorithm to sort the input and return the number of moves that were necessary to sort the Array. 
+#### Best case
+The best case scenario for this algorithm is a list that is already in the sorted order. The algorithm will only have to traverse the list once.
 
-###Extra
-Create a way for all Arrays to be able to use your bubble sort function as a method of the Array object.
-
-###Super Extra
-Write a browser tool that will visually show the array and it's values as they are being sorted to see how the elements are moving in real time. It will be impossible to see things being sorted in real time, so you may need to tweak your function to make this work or find new ways of calling it.
+#### Worst case
+The worst case scenario for this algorithm is a list in reverse sorted order. The algorithm will have to traverse the entire list once for each list item.
